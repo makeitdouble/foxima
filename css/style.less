@@ -1,0 +1,384 @@
+*{
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol{
+  list-style-type:none;
+
+}
+
+ul{
+  padding: 12px 20px;
+  li{
+    font-size: 14px;
+    padding: 20px;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 1.05px;
+    font-weight: 400;
+  }
+}
+h1{
+  font-size: 56px;
+  font-weight: 700;
+  color:white;
+  margin-left: 4px;
+}
+h2{
+  font-size: 46px;
+  color:#252525;
+}
+h3{
+  font-size: 42px;
+  color: white;
+}
+h4{
+  letter-spacing: 0.3px;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 20px auto 38px;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+}
+h5{
+  margin: 14px 20px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+}
+input{
+  outline: none;
+}
+.flb{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+.clear{
+  clear:both;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.container{
+  margin:0 120px;
+  @media screen and (max-width: 784px){
+    margin:0 30px;
+  }
+}
+
+
+a.btn{
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 12px 24px;
+  background-color: #188cef;
+}
+
+.header{
+  height:77px;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: white;
+  z-index: 1;
+
+  .container{
+    max-width:1280px;
+    margin:0 auto;
+
+    div.logo{
+      margin: 20px 30px;
+    }
+
+    div.nav{
+      position: relative;
+
+      ul{
+        @media screen and (max-width: 640px){
+          display:none;
+          background-color: white;
+          right: 0;
+          position: absolute;
+          z-index: 2;
+          top: 70px;
+          padding: 0;
+        }
+        @media screen and (min-width: 640px){
+          display:block!important;
+        }
+      }
+    }
+  }
+}
+
+div.main{
+  margin:77px auto 0;
+  max-width: 1280px;
+  background-color: #f2f2f2;
+
+}
+
+div.name{
+  padding: 142px 0 160px;
+  background: url('../img/bg1.jpg');
+  max-height: 540px;
+
+  p{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+    margin: 12px 4px 43px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+div.products{
+  padding: 90px 0 122px;
+
+  .flb{
+     margin: 0px -30px;
+    @media screen and (max-width: 640px){
+      margin: 0px -10px;
+    }
+  }
+
+  h2{
+    margin-bottom: 25px;
+  }
+
+  .product{
+    background-color: white;
+    text-align: center;
+    padding: 42px 0;
+    flex: 1 0 200px;
+    margin: 20px 33px 0;
+    @media screen and(max-width: 640px){
+      flex: 1 0 300px;
+      margin: 20px 13px 0;
+    }
+
+
+    .b-radius(5px);
+    .b-shadow(2px,2px, 10px, 0, 15%);
+
+    a.btn{
+      border: 2px solid #188cef;
+      color: #188cef;
+      background-color: white;
+      font-size: 15px;
+      padding: 8px 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+div.message{
+  background: url('../img/bg2.jpg');
+  padding: 138px 0 110px;
+  text-align: center;
+
+  p{
+    color: rgba(255,255,255,80%);
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 20px;
+    letter-spacing: -0.12px;
+  }
+}
+
+
+div.news{
+  padding: 70px 0 76px;
+
+  .flb{
+    margin: 0 -4px;
+
+  }
+  h2{
+    margin-bottom: 22px;
+  }
+
+
+  .new{
+    background-color: white;
+    height: 295px;
+    width: 250px;
+    position: relative;
+    flex: 1 1 250px;
+    margin: 6px;
+
+    .b-radius(5px);
+    .b-shadow(1px,1px, 2px, 0, 15%);
+
+    a{
+      color: #188cef;
+      font-size: 16px;
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+    }
+    img{
+      width:100%;
+      min-height: 145px;
+    }
+
+    .img{
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 55px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      height: 145px;
+    }
+  }
+}
+
+div.contacts{
+  padding: 70px 0;
+  background-color: white;
+
+
+  .info{
+    @media screen and (max-width: 640px){
+      float:none;
+      width:100%;
+    }
+
+    & > div{
+      margin: 14px 0;
+    }
+    span{
+      letter-spacing: 1px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+  }
+
+
+  h2{
+    margin-bottom: 22px;
+  }
+
+  span{
+    color: #808080;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+
+  .call{
+    width:292px;
+    padding: 8px 0;
+    @media screen and (max-width: 640px){
+      float:none;
+      width:100%;
+    }
+
+    form{
+      padding-right: 22px;
+    }
+
+    input{
+      padding: 10px;
+      .b-radius(100px);
+      border:1px solid #e1e1e1;
+      width: 100%;
+    }
+
+    span{
+      margin-bottom: 8px;
+      display: block;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+
+    a.btn{
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 11px;
+    }
+  }
+}
+
+footer{
+  padding: 30px;
+
+  a{
+    color: #188cef;
+    text-decoration: underline;
+  }
+
+  span{
+    padding: 0 6px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* https://www.canonium.com/articles/tutorial-create-flexbox-navbar */
+.toggle{
+  display:none;
+  @media screen and (max-width: 640px){
+    display: block;
+  }
+  float: right;
+  margin: 25px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.icon{
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  &,
+  &:before,
+  &:after {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #555555;
+  }
+  &:before, &:after { position: absolute; content: ""; }
+  &:before { top: -8px; }
+  &:after { top: 8px; }
+}
+/* https://www.canonium.com/articles/tutorial-create-flexbox-navbar */
+
+
+
+
+
+.b-radius(@radius){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.b-shadow(@x, @y, @blur, @color, @alpha){
+  -webkit-box-shadow: @x @y @blur rgba(@color, @color, @color, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(@color, @color, @color, @alpha);
+  -o-box-shadow: @x @y @blur rgba(@color, @color, @color, @alpha);
+  box-shadow: @x @y @blur rgba(@color, @color, @color, @alpha);
+}

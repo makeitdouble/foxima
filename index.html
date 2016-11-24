@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700,900" rel="stylesheet">
+    <link rel="stylesheet/less" href="css/style.less" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/less.min.js"></script>
+    <script>
+        $( document ).ready(function(){
+            $('.toggle').click(function () {
+                $('.nav > ul').fadeToggle( 'fast');
+            });
+        });
+    </script>
+
+    <title>test</title>
+
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container">
+        <div class="logo fl">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="nav fr">
+            <ul>
+                <li><a href="#">products</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+
+        </div>
+        <button class="toggle">
+            <span class="icon"></span>
+        </button>
+
+    </div>
+
+
+</div>
+<div class="main">
+
+    <div class="name">
+        <div class="container">
+            <h1>The Emerald Buddha</h1>
+            <p>Dude You Re Getting A Telescope</p>
+            <a class="btn" href="#">Read more</a>
+        </div>
+    </div>
+    <div class="products">
+        <div class="container">
+            <h2>Products</h2>
+            <div class="flb">
+                <div class="product">
+                    <img src="./img/products/1.jpg" alt="">
+                    <h4>Telescopes 101</h4>
+                    <a href="#" class="btn">See more</a>
+                </div>
+                <div class="product">
+                    <img src="./img/products/2.jpg" alt="">
+                    <h4>Pictures in the sky</h4>
+                    <a href="#" class="btn">See more</a>
+                </div>
+                <div class="product">
+                    <img src="./img/products/3.jpg" alt="">
+                    <h4>Moon fever</h4>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="message">
+        <div class="container">
+            <h3>Advertisers Embrace Rich Media Format</h3>
+            <p>
+                Barbecue party tips can help a host put together an extraordinary event for family and friends. Eating outdoors is a favorite pastime enjoyed by everyone and planning the event can help make it more memorable and stress-free for the host.
+            </p>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <h2>News</h2>
+            <div class="flb">
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/1.jpg" alt="">
+                    </div>
+                    <h5>Cooking Healthy For Radiant Health</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/2.jpg" alt="" align="middle">
+                    </div>
+                    <h5>Buying Prescription Drugs
+                        In Canada</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/3.jpg" alt="">
+                    </div>
+                    <h5>Computer Repair</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/4.jpg" alt="">
+                    </div>
+                    <h5>Aloe Vera A Wonder Herb
+                        For Skin</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/5.jpg" alt="">
+                    </div>
+                    <h5>Pictures In The Sky</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/6.jpg" alt="" align="middle">
+                    </div>
+                    <h5>Male Menopause The
+                        Alternative Anti Aging
+                        Approach</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/7.jpg" alt="">
+                    </div>
+                    <h5>Tourism Is Back In Full Swing
+                        In Cancun Mexico</h5>
+                    <a href="#" >Read more</a>
+                </div>
+                <div class="new">
+                    <div class="img">
+                        <img src="./img/news/8.jpg" alt="">
+                    </div>
+                    <h5>Roar With Confidence</h5>
+                    <a href="#" >Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <h2>Contacts</h2>
+            <div class="info fl">
+                <div class="phone">
+                    <span>phone</span>
+                    <p>+1 (456) 789 55 45</p>
+                </div>
+                <div class="email">
+                    <span>e-mail</span>
+                    <p>inbox@emerald.com</p>
+                </div>
+                <div class="address">
+                    <span>address</span>
+                    <p>New York</p>
+                    <p>3983 Douglas Cape Apt. 289</p>
+                </div>
+            </div>
+            <div class="call fr">
+                <form action="">
+                    <span>your name</span>
+                    <input type="text">
+                    <span>your phone</span>
+                    <input type="text">
+                    <a href="#" class="btn">Return call</a>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+   <footer>
+       <div class="copy fl">
+           <span>© Emerald Buddha, 2013</span>
+       </div>
+       <div class="links fr">
+           <span><a href="mailto:inbox@emerald.com">inbox@emerald.com</a></span>
+           <span>+1 (456) 7895545</span>
+           <span><a href="#">Contact us</a></span>
+       </div>
+       <div class="clear"></div>
+   </footer>
+
+
+</div>
+
+
+</body>
+</html>
